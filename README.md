@@ -12,6 +12,13 @@ chmod +x /usr/bin/docker-compose
 - Move docker templates ``mv micro-service-lumen-template/Dockerfile micro-service-lumen-template/docker-compose.yml .``
 - Move index.php (Only if you don't have an existing index.php) ``mv micro-service-lumen-template/index.php .``
 - Remove template folder `` rm -rf micro-service-lumen-template``
-- Start your container! ``docker-compose up -d``
+- Start your services! ``docker-compose up -d``
+
+
+### Start mysql phpmyadmin only
+```
+docker-compose up -d db myadmin
+```
+- It will be accesible in localhost:8080
 
 *the contents of index.php only points to your server.php*
